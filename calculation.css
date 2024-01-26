@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header {
+    background-image: url(capa1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    padding: 70px;
+    text-align: end;
+}
+
+section {
+    background: #383838;
+    height: 200vh;
+}
+
+.header h2 {
+    color: white;
+}
+
+.header p {
+    color: rgb(189, 189, 189);
+}
+
+
+
+.text-white,
+.text-white-houve:hover,
+.tablinks {
+    color: #FFFFFF !important;
+    background: #757575;
+}
+
+.shadow-2,
+.tablinks:hover,
+.context_menu_pai,
+.box_login,
+.datepicker.dropdown-menu,
+.dialogbox,
+.overflow-menu ul {
+    box-shadow: 0 2px 5px 0 rgba(34, 34, 34, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.transition-1,
+.tablinks {
+    transition: all .3s ease-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.tablinks {
+    border: 0;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tabcontent h3 {
+    position: relative;
+    top: 40px;
+}
+
+.tabcontent p {
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: fixed;
+    /* Position them relative to the browser window */
+    left: -80px;
+    /* Position them outside of the screen */
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 100px;
+    /* Set a specific width */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 15px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+    margin-top: 50px;
+    z-index: 1;
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #04AA6D;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+    /* Blue */
+}
+
+#contact {
+    top: 140px;
+    background-color: #555;
+        /* Light Black */
+}
+
+.men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
+
+
+
+
+
+
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    color: #797979;
+}
+
+.form-group input,
+.form-group select {
+    background: #1A1A1A;
+    width: 100%;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+    outline: none;
+    transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ca01ca;
+}
+
+.form-group button {
+    background: #7c5c5c;
+    border-radius: 5px;
+    border: 0;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.form-group:last-child {
+    margin-top: 40px;
+}
+
+.result-container {
+    margin-top: 50px;
+}
+
+.result-content {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #cacaca;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.result-content ul {
+    list-style: none;
+}
+
+.result-content ul li {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.result-content ul li strong {
+    color: #ee5e5e;
+}
+
+.text {
+    position: relative;
+    top: 150px;
+    color: #686868;
+  }
+  .text h1 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 100px;
+}
+
+.text p {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 100px;
+}
+
+.text span {
+    font-size: 18px;
+    color: #1b1b1b;
+}

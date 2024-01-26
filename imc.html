@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <section>
+
+        <div class="header">
+            <h2>Training on topics</h2>
+            <p>Perfect your body be a happy and different person.</p>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="index.html" id="about">INÍCIO</a>
+            <a href="calculation.html" id="blog">Calorias</a>
+            <a href="https://www.linkedin.com/in/jonas-fabricio-dos-santos-2734b4236/" target="_blank"
+                id="contact">linkedin</a>
+        </div>
+
+
+        <div class="men">
+
+            <div class="container">
+                <header>
+                    <h1> Calculadora de IMC</h1>
+                </header>
+
+                <div class="content">
+                    <div class="tela1">
+
+                        <form>
+                            <p>Digite seu peso</p>
+                        </form>
+                        <input id='peso' type='text' placeholder="Kg" />
+
+                        <div>
+                            <p>Digite sua altura</p>
+                            <input id='altura' type='text' placeholder="Cm" />
+
+                        </div>
+                        <div>
+                            <input id='btn_calcular' class='botao' type="button" value="Calcular!">
+                        </div>
+                        <div id="resultado"></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="text">
+
+            <h1>Como interpretar o resultado de IMC</h1>
+            <p>Depois de obter o resultado de IMC, deve-se interpretar o valor utilizando a seguinte tabela:</p>
+            <img src="grafico-imc.png" alt="grafico">
+            <h1>Para que serve o cálculo do Índice de Massa Corporal?</h1>
+            <p>O IMC é um dos parâmetros utilizados para classificar a composição corporal de uma pessoa.
+                Isso porque ele avalia se o peso está adequado para a estatura. Por isso, não é incomum que
+                ele seja aferido durante exames de check-up, por exemplo.
+                <br><br>
+                Estudos científicos demonstram que os indivíduos que se afastam da faixa adequada ou
+                recomendada do IMC, seja para mais ou para menos, apresentam maior risco de complicações
+                para a saúde e também de mortalidade.
+                <br><br>
+                Embora seja uma ferramenta importante e reconhecida mundialmente, o IMC não informa sobre a
+                circunferência abdominal, a distribuição da gordura corporal e a massa muscular.
+                <br><br>
+                Atualmente, essas medidas também são reconhecidas como informações relevantes e importantes
+                para a análise de composição corporal por demonstrarem relação com o risco de problemas
+                cardiovasculares e para a saúde em geral.
+                <br><br><br><br>
+            <h1>Como calcular o IMC?</h1>
+            <p>O IMC é calculado por meio da divisão do peso do indivíduo pela estatura, em metros, ao quadrado. De
+                forma simplificada, temos: peso/(altura x altura).
+                <br><br>
+                Vamos a um exemplo prático: se uma mulher pesa 60 kg e tem 1.75 de altura, seu IMC será 19.59kg/m2.
+                Portanto, como você pode conferir a seguir, ela apresenta peso adequado para a sua altura.
+            </p>
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+    <script>
+        let botaoCalcular = document.getElementById(btn_calcular);
+        function calculandoIMC() {
+            let peso = document.getElementById("peso").value;
+            let altura = document.getElementById("altura").value / 100;
+            let resultado = document.getElementById("resultado")
+            if (altura !== "" && peso !== "") {
+                let imc = (peso / (altura * altura)).toFixed(2);
+                let mensagem = "";
+                if (imc < 18.5) {
+                    mensagem = "Abaixo do peso!"
+                } else if (imc < 25) {
+                    mensagem = "Você está com o peso ideal!"
+                } else if (imc < 30) {
+                    mensagem = "Você está levemente acima do peso!"
+                } else if (imc < 35) {
+                    mensagem = "Cuidado! Obesidade grau I"
+                } else if (imc < 40) {
+                    mensagem = "Cuidado! Obesidade grau II"
+                } else {
+                    mensagem = "Cuidado! Obesidade grau III"
+                }
+                resultado.textContent = `Seu IMC é ${imc}! ${mensagem}`;
+            } else {
+                resultado.textContent = "Preencha todos os campos!!!"
+            }
+        }
+        btn_calcular.addEventListener('click', calculandoIMC);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-image: url(capa1.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+
+  padding: 70px;
+  text-align: end;
+}
+
+.header h2 {
+  color: white;
+}
+
+.header p {
+  color: rgb(189, 189, 189);
+}
+
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #969696;
+}
+
+.tab {
+  text-align: center;
+  background: #6e6e6e;
+}
+
+.text-white,
+.text-white-houve:hover,
+.tablinks {
+  color: #FFFFFF !important;
+  background: #757575;
+}
+
+.shadow-2,
+.tablinks:hover,
+.context_menu_pai,
+.box_login,
+.datepicker.dropdown-menu,
+.dialogbox,
+.overflow-menu ul {
+  box-shadow: 0 2px 5px 0 rgba(34, 34, 34, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.transition-1,
+.tablinks {
+  transition: all .3s ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.tablinks {
+  border: 0;
+  padding: 10px;
+  width: 120px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.men {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tabcontent h3 {
+  position: relative;
+  top: 40px;
+}
+
+.tabcontent p {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+}
+
+
+
+
+
+#footer {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+  /* altura do rodapé */
+  margin-top: 10%;
+  padding-top: 60px;
+}
+
+.main_footer_copy {
+  background-color: #6e6e6e;
+  width: 100%;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.main_footer_copy p {
+  font-size: 1em;
+  color: #ffffff;
+  height: 20px;
+}
+
+.main_footer_copy .m-b-footer {
+  margin-bottom: 0.5em;
+}
+
+.main_footer_copy .by {
+  font-size: 0.96em;
+}
+
+.main_footer_copy .by a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.main_footer_copy .by a:hover {
+  text-decoration: underline;
+  color: #fffb00
+}
+
+.main_footer_copy .by i {
+  font-size: 0.96em;
+  margin-right: 3px;
+  color: #e82626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed;
+  /* Position them relative to the browser window */
+  left: -80px;
+  /* Position them outside of the screen */
+  transition: 0.3s;
+  /* Add transition on hover */
+  padding: 15px;
+  /* 15px padding */
+  width: 100px;
+  /* Set a specific width */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 15px;
+  /* Increase font size */
+  color: white;
+  /* White text color */
+  border-radius: 0 5px 5px 0;
+  /* Rounded corners on the top right and bottom right side */
+  margin-top: 50px;
+  z-index: 1;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+  /* Blue */
+}
+
+#contact {
+  top: 140px;
+  background-color: #555
+    /* Light Black */
+}
+
+
+
+
+
+#gallery-popup .modal-img {
+  width: 60%;
+}
+div.gall {
+  border: 1px solid #ccc;
+}
+
+div.gall:hover {
+  border: 1px solid #777;
+}
+
+div.gall img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 0px 0px 15px;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.gall span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+.responsive {
+  position: relative;
+  padding: 8px 6px;
+  float: left;
+  width: 24.99999%;
+  top: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .text-white,
+.text-white-houve:hover,
+.tablinks {
+  width: 115px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 50%;
+  }
+  #gallery-popup .modal-img {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
